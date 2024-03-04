@@ -1,0 +1,12 @@
+python3 wc.py test1.txt test2.txt test3.txt
+
+15 15 36 test1.txt
+21 22 55 test2.txt
+1 1 2 test3.txt
+37 38 93 total
+
+wc test1.txt test2.txt test3.txt
+15 15 36 test1.txt
+21 22 55 test2.txt
+ 1  1  2 test3.txt
+37 38 93 total

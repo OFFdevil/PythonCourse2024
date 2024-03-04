@@ -1,0 +1,21 @@
+python3 nl.py test1.txt
+
+    1 first
+    2 second
+    3 next empty
+    4
+
+cat test1.txt | python3 nl.py test1.txt
+
+    1 first
+    2 second
+    3 next empty
+    4
+
+nl -b a test1.txt
+
+     1  first
+     2  second
+     3  next empty
+     4
+

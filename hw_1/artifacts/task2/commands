@@ -1,0 +1,73 @@
+cat test1.txt | python3 tail.py
+
+17
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+python3 tail.py test1.txt test2.txt
+
+==> test1.txt <==
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+==> test2.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+tail test1.txt test2.txt
+
+==> test1.txt <==
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+==> test2.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10

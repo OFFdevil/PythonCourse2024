@@ -1,5 +1,3 @@
-
-
 def generate_latex_row(row: str) -> str:
     return " & ".join(map(str, row)) + " \\\\\n"
 
@@ -19,6 +17,13 @@ def generate_latex_table(array: list) -> str:
             + "".join(map(generate_latex_row, array))
             + "\\hline\n"
             + "\\end{tabular}\n"
+            )
+
+
+def generate_image(img_path: str, scale: float) -> str:
+    return ("\\begin{center}"
+            f"\\includegraphics[scale={scale}]{{{img_path}}}\n"
+            "\\end{center}\n"
             )
 
 

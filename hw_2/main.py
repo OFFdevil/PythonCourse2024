@@ -1,8 +1,7 @@
 import sys
 from datetime import datetime
 
-from functions import generate_latex_table, generate_header, generate_footer
-
+from MyLibrary.my_functions import generate_latex_table, generate_header, generate_image, generate_footer
 
 if __name__ == "__main__":
     name_file_with_table = sys.argv[1]
@@ -13,4 +12,6 @@ if __name__ == "__main__":
         with open("artifacts/latex.tex", "w") as latex:
             latex.write(generate_header("Latex", "Daniil", str(datetime.now().date())))
             latex.write(generate_latex_table(lines))
+            latex.write(generate_image("artifacts/picture.png", 1.5))
             latex.write(generate_footer())
+
